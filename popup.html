@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon Scraper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 20px;
+      width: 260px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    input, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h3>Amazon Scraper</h3>
+  <label>Delay per item (seconds):</label>
+  <input id="delay" type="number" step="0.1" min="0.1" value="1" />
+  <button id="start">Start</button>
+  <button id="stop">Stop & Download</button>
+  <script src="popup.js"></script>
+</body>
+</html>

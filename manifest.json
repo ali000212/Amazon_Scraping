@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Laptop Scraper",
+  "version": "1.0",
+  "description": "Scrape Amazon laptop deals with controlled delay and auto-pagination.",
+  "permissions": ["scripting", "downloads", "tabs", "storage"],
+  "host_permissions": ["https://www.amazon.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Amazon Scraper"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
